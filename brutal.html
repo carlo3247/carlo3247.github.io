@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hallo</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <style>
+    #draggable { width: 250px; height: 10px; padding: 0.5em; top: 10px; left: 300px; background-color: #fff; }
+    #draggable2 { width: 0px; height: 0px; padding: 0.5em; top: 10px; left: 11px; color: #505050; font-size: 50; font-family: 'Verdana';}
+    #draggable3 { width: 0; height: 0px; padding: 0.5em; top: 0px; left: 801px; }
+    #draggable4 { width: 50px; height: 10px; padding: 0.5em; top: 15; left: 367px; color: #ff6600; font-size: 36; font-family: 'Arial';background-color: #6633cc;}
+    #draggable5 { width: 213px; height: 150px; padding: 0.5em; top: 70px; left: 40px; color: #66ff33; font-size: 43; font-family: 'Times';background-color: #ffccff;}
+    #draggable6 { width: 150px; height: 150px; padding: 0.5em; top: 0px; left: 454px; color: #ff0099; font-size: 17; font-family: 'COMIC SANS MS';background-color: #00ff99;}
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#draggable" ).draggable();
+      $( "#draggable2" ).draggable();
+      $( "#draggable3" ).draggable();
+      $( "#draggable4" ).draggable();
+      $( "#draggable5" ).draggable();
+      $( "#draggable6" ).draggable();
+
+    } );
+    </script>
+  </head>
+  <body style="background: #999966;">
+   
+  <div id="draggable" class="ui-widget-content">
+    <p>carlo winkelhakes website</p>
+  </div>
+   
+  <div id="draggable2" class="ui-widget-content">
+    <p><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Trellick_Tower2.jpg/220px-Trellick_Tower2.jpg"> DESIGN </a></p>
+  </div>
+
+  <div id="draggable3" class="ui-widget-content">
+      <img src="cool.png">
+    </div>
+
+    <div id="draggable4" class="ui-widget-content">
+        <p>cs student</p>
+      </div>
+
+      <div id="draggable5" class="ui-widget-content">
+          <p>contact: carlo.winkelhake@gmail.com</p>
+        </div>
+
+        <div id="draggable6" class="ui-widget-content">
+            <p>have a nice day</p>
+          </div>
+   
+  </body>
+  </html>
