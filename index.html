@@ -1,57 +1,140 @@
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>hallo</title>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <style>
-    #draggable { width: 250px; height: 10px; padding: 0.5em; top: 10px; left: 300px; background-color: #fff; }
-    #draggable2 { width: 0px; height: 0px; padding: 0.5em; top: 10px; left: 11px; color: #505050; font-size: 50; font-family: 'Verdana';}
-    #draggable3 { width: 0; height: 0px; padding: 0.5em; top: 0px; left: 801px; }
-    #draggable4 { width: 50px; height: 10px; padding: 0.5em; top: 15; left: 367px; color: #ff6600; font-size: 36; font-family: 'Arial';background-color: #6633cc;}
-    #draggable5 { width: 213px; height: 150px; padding: 0.5em; top: 70px; left: 40px; color: #66ff33; font-size: 43; font-family: 'Times';background-color: #ffccff;}
-    #draggable6 { width: 150px; height: 150px; padding: 0.5em; top: 0px; left: 454px; color: #ff0099; font-size: 17; font-family: 'COMIC SANS MS';background-color: #00ff99;}
-    </style>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-    $( function() {
-      $( "#draggable" ).draggable();
-      $( "#draggable2" ).draggable();
-      $( "#draggable3" ).draggable();
-      $( "#draggable4" ).draggable();
-      $( "#draggable5" ).draggable();
-      $( "#draggable6" ).draggable();
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Coda%20Caption">
+<style>
+body {font-family: "Roboto", sans-serif;}
+h1,h2,h3,h4,h5,h6 {font-family: "Coda Caption", sans-serif; font-weight: bold}
 
-    } );
-    </script>
-  </head>
-  <body style="background: #999966;">
-   
-  <div id="draggable" class="ui-widget-content">
-    <p>carlo winkelhakes website</p>
+a {text-decoration: none}
+.w3-text-black h2 {border-style: none none solid none}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #fff; border-style: none solid none none}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-white">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-bold">
+  <!-- Avatar image in top left corner -->
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-red w3-hover-black">
+    <p style="font-weight: bold !important">HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-green">
+    <p style="font-weight: bold !important">ABOUT</p>
+  </a>
+  <a href="#work" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">
+    <p style="font-weight: bold !important">EXPERIENCE</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-blue">
+    <p style="font-weight: bold !important">CONTACT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-pink">
+    <p style="font-weight: bold !important">PICTURES</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-white w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#work" class="w3-bar-item w3-button" style="width:25% !important">EXPERIENCE</a>
+    <!-- <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PICTURES</a> -->
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
-   
-  <div id="draggable2" class="ui-widget-content">
-    <p><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Trellick_Tower2.jpg/220px-Trellick_Tower2.jpg"> DESIGN </a></p>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-white" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">carlo winkelhake</h1>
+    <p>cs student @ UCL</p>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-black w3-padding-64" id="about">
+    <h2 class="w3-text-black">ABOUT ME</h2>
+    <!-- <hr style="width:200px" class="w3-opacity"> -->
+    <p>Hello! My name is Carlo and I am currently a CS student on exchange at the University of Waterloo.
+      I enjoy building things with raspberry pis in my free time. My next project will be a basic line-following 
+      robot. Other than coding and (poor) soldering, I also am learning to play the piano.
+       For info on how to get in touch checkout the contact 
+      section.
+    </p>
+
+    <!-- <button class="w3-button w3-light-grey w3-padding-large w3-section"> -->
+      <!-- <i class="fa fa-download"></i> Download Resume -->
+    <!-- </button> -->
+    
+  <!-- End About Section -->
   </div>
 
-  <div id="draggable3" class="ui-widget-content">
-      <img src="cool.png">
-    </div>
+  <!-- Work Experience Section-->
+  <div class="w3-padding-64 w3-content w3-text-black" id="work">
+    <h2 class="w3-text-black">WORK EXPERIENCE</h2>
+    <p>Software Engineering Intern at Visa Europe (June 2018 - August 2018)</p>
+    <p>Chatbot Project for Camden Council (Oct 2017 - March 2018)</p>
+    <p>Internship at Aperto Move GmbH (June 2017 - Sep 2017)</p>
+    <p>App Development Project for SOAS (Jan 2017 - April 2017)</p>
+  </div>
+  <!-- End Work Experience Section-->
 
-    <div id="draggable4" class="ui-widget-content">
-        <p>cs student</p>
+    <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-black" id="contact">
+    <h2 class="w3-text-black">CONTACT</h2>
+
+    <div class="w3-section">
+      <p>carlo.winkelhake@gmail.com</p>
+      <p><a href="https://github.com/carlo3247" target="_blank" class="w3-hover-text-green">github</a></p>
+      <p><a href="https://www.linkedin.com/in/carlo-winkelhake-4a5b0a162" target="_blank" class="w3-hover-text-green">linkedin</a></p>  
+    </div><br>
+  <!-- End Contact Section -->
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-text-black w3-content" id="photos">
+    <h2 class="w3-text-black">PICTURES</h2>
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="pictures/gbz-full.jpg" style="width:100%">
+        <img src="pictures/frames-sketch.jpg" style="width:100%">
+        <img src="pictures/blackswan.png" style="width:100%">
+        <img src="pictures/plant.jpg" style="width:100%">
       </div>
 
-      <div id="draggable5" class="ui-widget-content">
-          <p>contact: carlo.winkelhake@gmail.com</p>
-        </div>
+      <div class="w3-half">
+        <img src="pictures/gbz-case.jpg" style="width:100%">
+        <img src="pictures/frames-test.jpg" style="width:100%">
+        <img src="pictures/sticker.png" style="width:100%">
+        <img src="pictures/sushi.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
 
-        <div id="draggable6" class="ui-widget-content">
-            <p>have a nice day</p>
-          </div>
-   
-  </body>
-  </html>
+
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-black w3-xlarge">
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a> using the <a href="https://www.w3schools.com/w3css/tryw3css_templates_dark_portfolio.htm" target="_blank" class="w3-hover-text-green">dark portfolio template</a>.</p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
