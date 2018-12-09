@@ -13,13 +13,19 @@ h1,h2,h3,h4,h5,h6 {font-family: "Coda Caption", sans-serif; font-weight: bold}
 
 a {text-decoration: none}
 .w3-text-black h2 {border-style: none none solid none}
-.w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {width: 120px;background: #fff; border-style: none solid none none}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+.hovercontainer { position: relative; width: 100%; color: #cccccc; margin-bottom: 12px; }
+.hovercontainer:hover .hoveroverlay { opacity: 0.75; }
+.hovercontainer:active .hoveroverlay { opacity: 0.75; }
+.hoverimage { width: 100%; height: auto; color: #555555; }
+.hoveroverlay { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: auto; height: auto; opacity: 0; transition: .5s ease; background-color: #000; }
+.hovertext { color: white; font-size: 20px; font-family: "Roboto", san-serif; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); }
 </style>
 <body class="w3-white">
 
@@ -72,7 +78,7 @@ a {text-decoration: none}
       skillset. My background is mainly in software engineering, but I also have some hardware experience
       from Raspberry Pi projects. In addition, I also gained some financial knowledge through my previous
       internship at Visa, as well as through investment classes. I play the guitar and am currently learning
-      to play the piano. If you have want to teach me something new or share something intersting with me,
+      to play the piano. If you want to teach me something new or share something interesting with me,
       please get in touch.
     </p>
 
@@ -93,39 +99,120 @@ a {text-decoration: none}
   </div>
   <!-- End Work Experience Section-->
 
+  <!-- Classes Taken-->
+  <div class="w3-padding-64 w3-content w3-text-black" id="work">
+    <h2 class="w3-text-black">MODULES TAKEN</h2>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <p>Operating Systems</p>
+        <p>Algorithms</p>
+        <p>Introduction to Investments</p>
+        <p>Systems Engineering</p>
+        <p>Compilers</p>
+        <p>Mathematics and Statistics</p>
+        <p>Software Engineering and Human Computer Interaction</p>
+        <p>Logic and Database Theory</p>
+        <p>Computer Architecture and Concurrency</p>
+      </div>
+      <div class="w3-half">
+        <p>Engineering Mathematics in Finance</p>
+        <p>Discrete Mathematics for Computer Scientists</p>
+        <p>Design and Professional Skills</p>
+        <p>Engineering Challenges</p>
+        <p>Robotics Programming</p>
+        <p>Theory I & II</p>
+        <p>Object-Oriented Programming</p>
+        <p>Principles of Programming</p>
+      </div>
+    </div>
+  </div>
+  <!-- Classes Taken Section-->
+
     <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-black" id="contact">
     <h2 class="w3-text-black">CONTACT</h2>
 
     <div class="w3-section">
-      <p>carlo.winkelhake@gmail.com</p>
+      <p><a href="mailto:carlo.winkelhake@gmail.com" target="_blank" class="w3-hover-text-green">email</a></p>
       <p><a href="https://github.com/carlo3247" target="_blank" class="w3-hover-text-green">github</a></p>
       <p><a href="https://www.linkedin.com/in/carlo-winkelhake-4a5b0a162" target="_blank" class="w3-hover-text-green">linkedin</a></p>  
     </div><br>
   <!-- End Contact Section -->
 
-  <!-- Portfolio Section -->
+  <!-- Picture Section -->
   <div class="w3-padding-64 w3-text-black w3-content" id="photos">
     <h2 class="w3-text-black">PICTURES</h2>
     <p>Here are some random pictures from stuff I have done in the past. Ask me for more information on them.</p>
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
-        <img src="pictures/gbz-full.jpg" style="width:100%">
-        <img src="pictures/frames-sketch.jpg" style="width:100%">
-        <img src="pictures/blackswan.png" style="width:100%">
-        <img src="pictures/plant.jpg" style="width:100%">
+        <div class="hovercontainer">
+          <img src="pictures/gbz-finished.jpg" class="hoverimage">
+          <div class="hoveroverlay">
+            <div class="hovertext">gameboy zero: only missing screws</div>
+          </div>
+        </div>
+        <div class="hovercontainer">
+          <img src="pictures/gbz-full.jpg" class="hoverimage">
+          <div class="hoveroverlay">
+            <div class="hovertext">gameboy zero: first test</div>
+          </div>
+        </div>
+        <div class="hovercontainer">
+          <img src="pictures/frames-sketch.jpg" class="hoverimage">
+          <div class="hoveroverlay">
+            <div class="hovertext">sketching ios ar ui</div>
+          </div>
+        </div>
+        <div class="hovercontainer">
+          <img src="pictures/blackswan.png" class="hoverimage">
+          <div class="hoveroverlay">
+            <div class="hovertext">created with affinity designer</div>
+          </div>
+        </div>
+        <div class="hovercontainer">
+          <img src="pictures/plant.jpg" class="hoverimage">
+          <div class="hoveroverlay">
+            <div class="hovertext">data collected on my flat's aloe vera</div>
+          </div>
+        </div>
       </div>
 
       <div class="w3-half">
-        <img src="pictures/gbz-case.jpg" style="width:100%">
-        <img src="pictures/frames-test.jpg" style="width:100%">
-        <img src="pictures/sticker.jpg" style="width:100%">
-        <img src="pictures/sushi.jpg" style="width:100%">
+        <div class="hovercontainer">
+          <img src="pictures/fibonacci.jpg" class="hoverimage">
+          <div class="hoveroverlay">
+            <div class="hovertext">fibonacci clock on inky phat</div>
+          </div>
+        </div>
+        <div class="hovercontainer">
+          <img src="pictures/gbz-case.jpg" class="hoverimage">
+          <div class="hoveroverlay">
+            <div class="hovertext">modifying the gbz case</div>
+          </div>
+        </div>
+        <div class="hovercontainer">
+          <img src="pictures/frames-test.jpg" class="hoverimage">
+          <div class="hoveroverlay">
+            <div class="hovertext">proof of concept for frame measuring</div>
+          </div>
+        </div>
+        <div class="hovercontainer">
+          <img src="pictures/sticker.jpg" class="hoverimage">
+          <div class="hoveroverlay">
+            <div class="hovertext">hackathon sticker app</div>
+          </div>
+        </div>
+        <div class="hovercontainer">
+          <img src="pictures/sushi.jpg" class="hoverimage">
+          <div class="hoveroverlay">
+            <div class="hovertext">created with affinity designer</div>
+          </div>
+        </div>
       </div>
     <!-- End photo grid -->
     </div>
-  <!-- End Portfolio Section -->
+  <!-- End Picture Section -->
   </div>
 
 
