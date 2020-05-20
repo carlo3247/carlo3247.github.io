@@ -6,236 +6,313 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Coda%20Caption">
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 <style>
-body {font-family: "PT Serif", sans-serif;}
-h1,h2,h3,h4,h5,h6 {font-family: "Playfair Display", sans-serif; font-weight: bold}
+  body {
+    font-family: "PT Serif", sans-serif;
+  }
 
-a {text-decoration: none}
-.w3-text-black h2 {border-style: none none solid none; border-width: 1px;}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #fff; border-style: none none none none}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: bold
+  }
 
-.hovercontainer { position: relative; width: 100%; color: #cccccc; margin-bottom: 12px; }
-.hovercontainer:hover .hoveroverlay { opacity: 0.75; }
-.hovercontainer:active .hoveroverlay { opacity: 0.75; }
-.hoverimage { width: 100%; height: auto; color: #555555; }
-.hoveroverlay { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: auto; height: auto; opacity: 0; transition: .5s ease; background-color: #000; }
-.hovertext { color: white; font-size: 20px; font-family: "PT Serif", san-serif; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); }
+  a {
+    text-decoration: none
+  }
+
+  .w3-text-black h2 {
+    border-style: none none solid none;
+    border-width: 1px;
+  }
+
+  /* Set the width of the sidebar to 120px */
+  .w3-sidebar {
+    width: 120px;
+    background: #fff;
+    border-style: none none none none
+  }
+
+  /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+  #main {
+    margin-left: 120px
+  }
+
+  /* Remove margins from "page content" on small screens */
+  @media only screen and (max-width: 600px) {
+    #main {
+      margin-left: 0
+    }
+  }
+
+  .hovercontainer {
+    position: relative;
+    width: 100%;
+    color: #cccccc;
+    margin-bottom: 12px;
+  }
+
+  .hovercontainer:hover .hoveroverlay {
+    opacity: 0.75;
+  }
+
+  .hovercontainer:active .hoveroverlay {
+    opacity: 0.75;
+  }
+
+  .hoverimage {
+    width: 100%;
+    height: auto;
+    color: #555555;
+  }
+
+  .hoveroverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000;
+  }
+
+  .hovertext {
+    color: white;
+    font-size: 20px;
+    font-family: "PT Serif", san-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
 </style>
+
 <body class="w3-white">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-bold">
-  <!-- Avatar image in top left corner -->
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-red w3-hover-black">
-    <p style="font-weight: bold !important">HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-green">
-    <p style="font-weight: bold !important">ABOUT</p>
-  </a>
-  <a href="#work" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">
-    <p style="font-weight: bold !important">EXPERIENCE</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-blue">
-    <p style="font-weight: bold !important">CONTACT</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-pink">
-    <p style="font-weight: bold !important">PICTURES</p>
-  </a>
-</nav>
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-bold">
+    <!-- Avatar image in top left corner -->
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-red w3-hover-black">
+      <p style="font-weight: bold !important">HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-green">
+      <p style="font-weight: bold !important">ABOUT</p>
+    </a>
+    <a href="#work" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">
+      <p style="font-weight: bold !important">EXPERIENCE</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-blue">
+      <p style="font-weight: bold !important">CONTACT</p>
+    </a>
+    <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-pink">
+      <p style="font-weight: bold !important">PICTURES</p>
+    </a>
+  </nav>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-white w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#work" class="w3-bar-item w3-button" style="width:25% !important">EXPERIENCE</a>
-    <!-- <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PICTURES</a> -->
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-white" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">carlo winkelhake</h1>
-    <p>cs student @ UCL</p>
-  </header>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-black w3-padding-64" id="about">
-    <h2 class="w3-text-black">ABOUT ME</h2>
-    <!-- <hr style="width:200px" class="w3-opacity"> -->
-    <p>Hello! My name is Carlo and I am currently a CS student on exchange at the University of Waterloo.
-      Eventually, I will add more information about myself here. But for now, here is a quick summary.
-      I enjoy learning new things and working on problems that require creative solutions and a diverse
-      skillset. My background is mainly in software engineering, but I also have some hardware experience
-      from Raspberry Pi projects. In addition, I also gained some financial knowledge through my previous
-      internship at Visa, as well as through investment classes. I play the guitar and am currently learning
-      to play the piano. If you want to teach me something new or share something interesting with me,
-      please get in touch.
-    </p>
-
-    <!-- <button class="w3-button w3-light-grey w3-padding-large w3-section"> -->
-      <!-- <i class="fa fa-download"></i> Download Resume -->
-    <!-- </button> -->
-    
-  <!-- End About Section -->
-  </div>
-
-  <!-- Work Experience Section-->
-  <div class="w3-padding-64 w3-content w3-text-black" id="work">
-    <h2 class="w3-text-black">WORK EXPERIENCE</h2>
-    <p>Technology Intern at Optiver (July 2019 - August 2019)</p>
-    <p>Software Engineering Intern at Visa Europe (June 2018 - August 2018)</p>
-    <p>Chatbot Project for Camden Council (Oct 2017 - March 2018)</p>
-    <p>Internship at Aperto Move GmbH (June 2017 - Sep 2017)</p>
-    <p>App Development Project for SOAS (Jan 2017 - April 2017)</p>
-  </div>
-  <!-- End Work Experience Section-->
-
-  <!-- Classes Taken-->
-  <div class="w3-padding-64 w3-content w3-text-black" id="work">
-    <h2 class="w3-text-black">MODULES TAKEN</h2>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <p>Operating Systems</p>
-        <p>Algorithms</p>
-        <p>Introduction to Investments</p>
-        <p>Systems Engineering</p>
-        <p>Compilers</p>
-        <p>Mathematics and Statistics</p>
-        <p>Software Engineering and Human Computer Interaction</p>
-        <p>Logic and Database Theory</p>
-        <p>Computer Architecture and Concurrency</p>
-        <p>Reinforcement Learning</p>
-        <p>Virtual Environments</p>
-        <p>Affective Computing and Human Robot Interaction</p>
-      </div>
-      <div class="w3-half">
-        <p>Computer Security I</p>
-        <p>Machine Vision</p>
-        <p>Information Retrieval and Data Mining</p>
-        <p>Engineering Mathematics in Finance</p>
-        <p>Discrete Mathematics for Computer Scientists</p>
-        <p>Design and Professional Skills</p>
-        <p>Engineering Challenges</p>
-        <p>Robotics Programming</p>
-        <p>Theory I & II</p>
-        <p>Object-Oriented Programming</p>
-        <p>Principles of Programming</p>
-      </div>
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-white w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+      <a href="#work" class="w3-bar-item w3-button" style="width:25% !important">EXPERIENCE</a>
+      <!-- <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PICTURES</a> -->
+      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
     </div>
   </div>
-  <!-- Classes Taken Section-->
+
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center w3-white" id="home">
+      <h1 class="w3-jumbo"><span class="w3-hide-small">carlo winkelhake</h1>
+      <p>cs student @ UCL</p>
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-black w3-padding-64" id="about">
+      <h2 class="w3-text-black">ABOUT ME</h2>
+      <!-- <hr style="width:200px" class="w3-opacity"> -->
+      <p>Hello! My name is Carlo and I am currently a CS student at UCL finishing my final year of an MEng computer
+        science degree.
+        Eventually, I will add more information about myself here. But for now, here is a quick summary.
+        I enjoy learning new things and working on problems that require creative solutions and a diverse
+        skillset. My background is mainly in software engineering, but I also have some hardware experience
+        from Raspberry Pi projects. In addition, I also gained some financial knowledge through my previous
+        internship at Visa and Optiver, as well as through investment classes. I play the guitar and am currently
+        learning
+        to play the piano. If you want to teach me something new or share something interesting with me,
+        please get in touch.
+      </p>
+
+      <!-- <button class="w3-button w3-light-grey w3-padding-large w3-section"> -->
+      <!-- <i class="fa fa-download"></i> Download Resume -->
+      <!-- </button> -->
+
+      <!-- End About Section -->
+    </div>
+
+    <!-- Work Experience Section-->
+    <div class="w3-padding-64 w3-content w3-text-black" id="work">
+      <h2 class="w3-text-black">WORK EXPERIENCE</h2>
+      <p>Technology Intern at Optiver (July 2019 - August 2019)</p>
+      <p>Software Engineering Intern at Visa Europe (June 2018 - August 2018)</p>
+      <p>Chatbot Project for Camden Council (Oct 2017 - March 2018)</p>
+      <p>Internship at Aperto Move GmbH (June 2017 - Sep 2017)</p>
+      <p>App Development Project for SOAS (Jan 2017 - April 2017)</p>
+    </div>
+    <!-- End Work Experience Section-->
+
+    <!-- Classes Taken-->
+    <div class="w3-padding-64 w3-content w3-text-black" id="work">
+      <h2 class="w3-text-black">MODULES TAKEN</h2>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half">
+          <p>Operating Systems</p>
+          <p>Algorithms</p>
+          <p>Introduction to Investments</p>
+          <p>Systems Engineering</p>
+          <p>Compilers</p>
+          <p>Mathematics and Statistics</p>
+          <p>Software Engineering and Human Computer Interaction</p>
+          <p>Logic and Database Theory</p>
+          <p>Computer Architecture and Concurrency</p>
+          <p>Reinforcement Learning</p>
+          <p>Virtual Environments</p>
+          <p>Affective Computing and Human Robot Interaction</p>
+        </div>
+        <div class="w3-half">
+          <p>Computer Security I</p>
+          <p>Machine Vision</p>
+          <p>Information Retrieval and Data Mining</p>
+          <p>Engineering Mathematics in Finance</p>
+          <p>Discrete Mathematics for Computer Scientists</p>
+          <p>Design and Professional Skills</p>
+          <p>Engineering Challenges</p>
+          <p>Robotics Programming</p>
+          <p>Theory I & II</p>
+          <p>Object-Oriented Programming</p>
+          <p>Principles of Programming</p>
+        </div>
+      </div>
+    </div>
+    <!-- Classes Taken Section-->
 
     <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-black" id="contact">
-    <h2 class="w3-text-black">CONTACT</h2>
+    <div class="w3-padding-64 w3-content w3-text-black" id="contact">
+      <h2 class="w3-text-black">CONTACT</h2>
 
-    <div class="w3-section">
-      <p><a href="mailto:carlo.winkelhake@gmail.com" target="_blank" class="w3-hover-text-green">email</a></p>
-      <p><a href="https://github.com/carlo3247" target="_blank" class="w3-hover-text-green">github</a></p>
-      <p><a href="https://www.linkedin.com/in/carlo-winkelhake-4a5b0a162" target="_blank" class="w3-hover-text-green">linkedin</a></p>  
-    </div><br>
-  <!-- End Contact Section -->
+      <div class="w3-section">
+        <p><a href="mailto:carlo.winkelhake@gmail.com" target="_blank" class="w3-hover-text-green">email</a></p>
+        <p><a href="https://github.com/carlo3247" target="_blank" class="w3-hover-text-green">github</a></p>
+        <p><a href="https://www.linkedin.com/in/carlo-winkelhake-4a5b0a162" target="_blank"
+            class="w3-hover-text-green">linkedin</a></p>
+      </div><br>
+      <!-- End Contact Section -->
 
-  <!-- Picture Section -->
-  <div class="w3-padding-64 w3-text-black w3-content" id="photos">
-    <h2 class="w3-text-black">PICTURES</h2>
-    <p>Here are some random pictures from stuff I have done in the past. Ask me for more information on them.</p>
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <div class="hovercontainer">
-          <img src="pictures/gbz-finished.jpg" class="hoverimage">
-          <div class="hoveroverlay">
-            <div class="hovertext">gameboy zero: only missing screws</div>
+      <!-- Picture Section -->
+      <div class="w3-padding-64 w3-text-black w3-content" id="photos">
+        <h2 class="w3-text-black">PICTURES</h2>
+        <p>Here are some random pictures from stuff I have done in the past. Ask me for more information on them.</p>
+        <!-- Grid for photos -->
+        <div class="w3-row-padding" style="margin:0 -16px">
+          <div class="w3-half">
+            <div class="hovercontainer">
+              <img src="pictures/gbz-finished.jpg" class="hoverimage">
+              <div class="hoveroverlay">
+                <div class="hovertext">gameboy zero: only missing screws</div>
+              </div>
+            </div>
+            <div class="hovercontainer">
+              <img src="pictures/gbz-full.jpg" class="hoverimage">
+              <div class="hoveroverlay">
+                <div class="hovertext">gameboy zero: first test</div>
+              </div>
+            </div>
+            <div class="hovercontainer">
+              <img src="pictures/frames-sketch.jpg" class="hoverimage">
+              <div class="hoveroverlay">
+                <div class="hovertext">sketching ios ar ui</div>
+              </div>
+            </div>
+            <div class="hovercontainer">
+              <img src="pictures/blackswan.png" class="hoverimage">
+              <div class="hoveroverlay">
+                <div class="hovertext">created with affinity designer</div>
+              </div>
+            </div>
+            <div class="hovercontainer">
+              <img src="pictures/plant.jpg" class="hoverimage">
+              <div class="hoveroverlay">
+                <div class="hovertext">data collected on my flat's aloe vera</div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="hovercontainer">
-          <img src="pictures/gbz-full.jpg" class="hoverimage">
-          <div class="hoveroverlay">
-            <div class="hovertext">gameboy zero: first test</div>
+
+          <div class="w3-half">
+            <div class="hovercontainer">
+              <img src="pictures/fibonacci.jpg" class="hoverimage">
+              <div class="hoveroverlay">
+                <div class="hovertext">fibonacci clock on inky phat</div>
+              </div>
+            </div>
+            <div class="hovercontainer">
+              <img src="pictures/gbz-case.jpg" class="hoverimage">
+              <div class="hoveroverlay">
+                <div class="hovertext">modifying the gbz case</div>
+              </div>
+            </div>
+            <div class="hovercontainer">
+              <img src="pictures/frames-test.jpg" class="hoverimage">
+              <div class="hoveroverlay">
+                <div class="hovertext">proof of concept for frame measuring</div>
+              </div>
+            </div>
+            <div class="hovercontainer">
+              <img src="pictures/sticker.jpg" class="hoverimage">
+              <div class="hoveroverlay">
+                <div class="hovertext">hackathon sticker app</div>
+              </div>
+            </div>
+            <div class="hovercontainer">
+              <img src="pictures/sushi.jpg" class="hoverimage">
+              <div class="hoveroverlay">
+                <div class="hovertext">created with affinity designer</div>
+              </div>
+            </div>
           </div>
+          <!-- End photo grid -->
         </div>
-        <div class="hovercontainer">
-          <img src="pictures/frames-sketch.jpg" class="hoverimage">
-          <div class="hoveroverlay">
-            <div class="hovertext">sketching ios ar ui</div>
-          </div>
-        </div>
-        <div class="hovercontainer">
-          <img src="pictures/blackswan.png" class="hoverimage">
-          <div class="hoveroverlay">
-            <div class="hovertext">created with affinity designer</div>
-          </div>
-        </div>
-        <div class="hovercontainer">
-          <img src="pictures/plant.jpg" class="hoverimage">
-          <div class="hoveroverlay">
-            <div class="hovertext">data collected on my flat's aloe vera</div>
-          </div>
-        </div>
+        <!-- End Picture Section -->
       </div>
 
-      <div class="w3-half">
-        <div class="hovercontainer">
-          <img src="pictures/fibonacci.jpg" class="hoverimage">
-          <div class="hoveroverlay">
-            <div class="hovertext">fibonacci clock on inky phat</div>
-          </div>
-        </div>
-        <div class="hovercontainer">
-          <img src="pictures/gbz-case.jpg" class="hoverimage">
-          <div class="hoveroverlay">
-            <div class="hovertext">modifying the gbz case</div>
-          </div>
-        </div>
-        <div class="hovercontainer">
-          <img src="pictures/frames-test.jpg" class="hoverimage">
-          <div class="hoveroverlay">
-            <div class="hovertext">proof of concept for frame measuring</div>
-          </div>
-        </div>
-        <div class="hovercontainer">
-          <img src="pictures/sticker.jpg" class="hoverimage">
-          <div class="hoveroverlay">
-            <div class="hovertext">hackathon sticker app</div>
-          </div>
-        </div>
-        <div class="hovercontainer">
-          <img src="pictures/sushi.jpg" class="hoverimage">
-          <div class="hoveroverlay">
-            <div class="hovertext">created with affinity designer</div>
-          </div>
-        </div>
-      </div>
-    <!-- End photo grid -->
+
     </div>
-  <!-- End Picture Section -->
-  </div>
 
-
-  </div>
-  
     <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-black w3-xlarge">
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a> using the <a href="https://www.w3schools.com/w3css/tryw3css_templates_dark_portfolio.htm" target="_blank" class="w3-hover-text-green">dark portfolio template</a>.</p>
-    <p class="w3-medium">My old brutalist website is still <a href="brutal.html" target="_blank" class="w3-hover-text-green">here</a>.</p>
-  <!-- End footer -->
-  </footer>
+    <footer class="w3-content w3-padding-64 w3-text-black w3-xlarge">
+      <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+          class="w3-hover-text-green">w3.css</a> using the <a
+          href="https://www.w3schools.com/w3css/tryw3css_templates_dark_portfolio.htm" target="_blank"
+          class="w3-hover-text-green">dark portfolio template</a>.</p>
+      <p class="w3-medium">My old brutalist website is still <a href="brutal.html" target="_blank"
+          class="w3-hover-text-green">here</a>.</p>
+      <!-- End footer -->
+    </footer>
 
-<!-- END PAGE CONTENT -->
-</div>
+    <!-- END PAGE CONTENT -->
+  </div>
 
 </body>
+
 </html>
