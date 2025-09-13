@@ -6,25 +6,25 @@
   <meta name="description" content="Personal website for Your Name showcasing projects, gallery, and contact information.">
   <title>Your Name - Website</title>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-  <nav class="nav">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-<main>
-  <section id="about">
+<header class="site-header">
+  <div class="container">
     <h1>Your Name</h1>
+    <nav>
+      <ul class="nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="container">
+  <section id="about">
+    <h2>About</h2>
     <p>Replace this text with a short introduction about yourself, your work and interests.</p>
   </section>
 
@@ -58,9 +58,11 @@
     </ul>
   </section>
 </main>
-<footer>
-  <p>&copy; <span id="year"></span> Your Name</p>
-  <p><a href="brutal.html">Old site</a></p>
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Your Name</p>
+    <p><a href="brutal.html">Old site</a></p>
+  </div>
 </footer>
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();

@@ -1,69 +1,81 @@
 :root {
-  --accent: #2a7ae2;
-  --bg: #fafafa;
-  --text: #333;
+  --accent: #007acc;
+  --bg: #ffffff;
+  --text: #222222;
+  --light: #f2f2f2;
 }
 
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: 'PT Serif', serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
   background: var(--bg);
   color: var(--text);
 }
 
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-header {
-  background: var(--accent);
+.site-header {
+  background: var(--bg);
+  border-bottom: 1px solid var(--light);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-.nav ul {
+.site-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 1rem 0 0.5rem;
+}
+
+.nav {
   list-style: none;
   display: flex;
-  justify-content: center;
   gap: 1rem;
-  padding: 1rem;
+  padding: 0 0 1rem;
   margin: 0;
 }
 
 .nav a {
-  color: #fff;
-  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .nav a:hover {
-  text-decoration: underline;
-}
-
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
+  color: var(--accent);
 }
 
 section {
-  margin-bottom: 4rem;
+  padding: 3rem 0;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-top: 0;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
 }
 
 .projects-grid article {
-  background: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid var(--light);
+  border-radius: 4px;
   padding: 1rem;
+  background: var(--bg);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .gallery {
@@ -75,7 +87,9 @@ section {
 .gallery img {
   width: 100%;
   height: auto;
+  border-radius: 4px;
   display: block;
+  object-fit: cover;
 }
 
 .contact-list {
@@ -87,8 +101,21 @@ section {
   margin-top: 0.5rem;
 }
 
-footer {
-  background: #eee;
+.site-footer {
+  background: var(--light);
   text-align: center;
   padding: 2rem 0;
+  font-size: 0.875rem;
 }
+
+.site-footer a {
+  color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
